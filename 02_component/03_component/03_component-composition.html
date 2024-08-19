@@ -33,12 +33,28 @@
     //     return a+b+c;
     // }
     
-        const user = {
-            name: '홍길동',
-            age: 20,
-            phone: '010-1234-5678',
-            email: 'hong123@gmail.com',
-        }
+        // const user = {
+        //     name: '홍길동',
+        //     age: 20,
+        //     phone: '010-1234-5678',
+        //     email: 'hong123@gmail.com',
+        // }
+
+        let name = '홍길동';
+        let age = 20;
+        let phone = '010-1234-5678';
+        let email = 'hong123@gmail.com';
+
+        //  const user = {
+        //     name: name,
+        //     age: age,
+        //     phone: phone,
+        //     email: email,
+        // }
+
+        // 프로퍼티 단축 구문
+        const user = {name, age, phone, email};
+
 
         function NameCard(){
             return <h1>{user.name}</h1>
@@ -59,7 +75,7 @@
         }
 
         // 통합컨포넌트
-
+        // CBD( Component Based Development)
         function UserInfo(){
             return(
                 <div style = {{width : 300, border:'1px solid black', padding : 10}}>
