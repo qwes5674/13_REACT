@@ -14,6 +14,7 @@
 
     function increase(number){
 
+        //resolve는 결과 reejct는 에러를 잡는다
         const promise = new Promise((resolve, reject) => {
             setTimeout( // 화살표 함수를 작성할때 리턴에 대해 명확히 작성되어 있으면 return을 뺄 수 있다.
                 () => {
@@ -34,7 +35,7 @@
     }
 
     /*
-        increase ㅎ마수 호출 후에는 promise가 반환된다.
+        increase 함수 호출 후에는 promise가 반환된다.
         이 promise는 resolve 함수에 던져진 인수를 기억한다.
         이 promise를 통해 then함수를 호출하고
         던져지는 콜백함수의 인수로 기억했던 resolve 함수의 인수를 넣어준다.
