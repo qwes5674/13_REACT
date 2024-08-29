@@ -21,13 +21,15 @@ export function getMenuDetail(menuCode) {
     return menus.filter(menu => menu.menuCode === parseInt(menuCode))[0];
 }
 
-export function searchMenu(searchMenuName) {
+export function searchMenu(searchMenuName){
     console.log('searchMenuName 전달됨 : ', searchMenuName);
-    // match 함수는 포함 여부에 따라 인수값이 포함되어 있으면 객체를 반환
-    // console.log('abc'.match('d'));
 
-    // menu.menuName에 검색어가 들어있는 menu객체들을 배열로 반환하기
-    // console.log(menus.filter(menu => menu.menuName.match(searchMenuName)));
+    // mathch 함수는 포함 여부에 따라 인수값이 포함되어 있으면 객체를 반환
+    // console.log('abc'.match('d')); 
+    
+    // menu.menuName에 검색어가 있으면 반영 없으면 반영 x
+    // console.log(menus.filter(menu => menu.menuName.match(searchMenuName))); 
 
     return menus.filter(menu => menu.menuName.match(searchMenuName));
+    
 }

@@ -1,6 +1,8 @@
-function Header() {
-    return (
-        <h1>Welcome to Ohgiraffers Restaurant</h1>
+function Header(){
+    return(
+       <div> 
+        <h1> Welcome to ohgiraffers Restaurant </h1>
+       </div>
     );
 }
 
