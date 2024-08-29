@@ -1,9 +1,9 @@
-function Main() {
-    return (
+function Main (){
+    return(
         <div>
-            <h1>메인 페이지</h1>
+            <h1> 메인  </h1>
         </div>
-    )
+    );
 }
 
 export default Main;
